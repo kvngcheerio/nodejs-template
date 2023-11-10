@@ -1,0 +1,50 @@
+{
+  "name": "nodejs-api",
+  "version": "1.0.0",
+  "description": "Nodejs Backend API Template",
+  "main": "app.js",
+  "scripts": {
+    "docs": "apidoc -i . -o apidoc/ -e node_modules/",
+    "seed": "md-seed run -d",
+    "start": "nodemon app"
+  },
+  "keywords": [
+    "api",
+    "restful"
+  ],
+  "author": "Omozue Gregory",
+  "license": "ISC",
+  "dependencies": {
+    "@sentry/node": "^5.27.0",
+    "@sentry/tracing": "^5.27.0",
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "inline-css": "^3.0.0",
+    "joi": "^14.3.1",
+    "jwt-simple": "^0.5.6",
+    "lodash": "^4.17.20",
+    "mailgun-js": "^0.22.0",
+    "md5": "^2.3.0",
+    "mongodb": "^3.6.2",
+    "mongoose": "^5.10.7",
+    "mongoose-data-seed": "^2.1.6",
+    "mongoose-delete": "^0.5.2",
+    "mongoose-unique-validator": "^2.0.3",
+    "passport": "^0.4.1",
+    "passport-http-bearer": "^1.0.1",
+    "passport-local": "^1.0.0",
+    "uuidv4": "^6.2.3",
+    "xss-clean": "^0.1.1"
+  },
+  "mdSeed": {
+    "seedersFolder": "./app/seeders/api/v1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
